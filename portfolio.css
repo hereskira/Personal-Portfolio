@@ -317,7 +317,6 @@
 
 .skills{
     align-items: center;
-    margin: 50px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -336,7 +335,7 @@
     font-weight: 700;
     font-family: 'Raleway', sans-serif;
     color: #7B4AE2;
-    margin-left: 600px;
+    margin-left: 650px;
 }
 
 .skills-name{
@@ -360,11 +359,72 @@
     list-style: none;
     display: inline-block;
     vertical-align: top;
-    margin-left: 450px;
+    margin-left: 500px;
     margin-bottom: 50px;
 }
 
-.skills-list li{
-    list-style: none;
+.projects{
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
+.projects-title{
+    vertical-align: top;
+    width: 150px;
+    height: 45px;
+    border-radius: 16px;
+    background: rgba(123, 74, 226, 0.10);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: #7B4AE2;
+    margin-left: 630px;
+}
+
+.projects-container{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    margin-left: 100px;
+}
+
+.projects-scroll {
+    display: flex;
+}
+
+.projects-list{
+    list-style: none;
+    display: flex;
+    scroll-snap-align: center;
+}
+
+.projects-list img{
+    height: 200px;
+    margin-right: 10px;
+}
+
+.projects-name{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.interests{
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.books-img{
+    width: 450px;
+    margin-left: 480px;
+}
