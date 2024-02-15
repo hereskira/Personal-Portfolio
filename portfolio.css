@@ -160,7 +160,6 @@
 
 .email{
     border-radius: 16px;
-    /*border: 1px solid #7B4AE2;*/
     text-align: center;
     background: rgba(123, 74, 226, 0.10);
     height: 36px;
@@ -187,6 +186,17 @@
     height: 500px;
 }
 
+.aboutme-pic2{
+    display: inline-block;
+    vertical-align: top;
+    height: 500px;
+    display: none;
+}
+
+.aboutme-pic, .aboutme-pic2 {
+    position: absolute;
+}
+
 .aboutme-title{
     vertical-align: top;
     width: 160px;
@@ -203,6 +213,11 @@
     color: #7B4AE2;
 }
 
+.profile-container{
+    display: inline-block;
+    margin-left: 500px;
+}
+
 .perso-info{
     display: inline-block;
     margin-left: 100px;
@@ -217,12 +232,70 @@
     vertical-align: top;
 }
 
+.perso-name2{
+    font-family: 'Raleway', sans-serif;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 800;
+    display: none;
+}
+
+.button2.active {
+    border: none;
+    background: rgba(123, 74, 226, 0.10);
+}
+
 .perso-content{
     color: rgba(255, 255, 255, 0.50);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
+    display: block;
+}
+
+.perso-content2{
+    display: none;
+    color: rgba(255, 255, 255, 0.50);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+.aboutme-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.button1{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: rgba(123, 74, 226, 0.70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.button1:hover {
+    color: #7B4AE2;
+}
+
+.button2{
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(123, 74, 226, 0.50);
+    font-size: 20px;
+    color: rgba(123, 74, 226, 0.70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2:hover {
+    color: #7B4AE2;
 }
 
 .edu{
