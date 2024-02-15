@@ -19,19 +19,6 @@
     color: rgba(255, 255, 255, 0.50);
 }
 
-/*.nav{ if visited
-    display: flex;
-    height: 60px;
-    margin-right: 40px;
-    flex-direction: column;
-    justify-content: center;
-    color: rgba(123, 74, 226, 0.50);
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-}*/
-
 .nav{
     margin-right: 40px;
     flex-direction: column;
@@ -192,8 +179,6 @@
 .about-me{
     align-items: center;
     margin: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 
 .aboutme-pic{
@@ -315,12 +300,6 @@
     margin-top: 32px;
 }
 
-.skills{
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-}
-
 .skills-title{
     vertical-align: top;
     width: 120px;
@@ -361,12 +340,6 @@
     vertical-align: top;
     margin-left: 500px;
     margin-bottom: 50px;
-}
-
-.projects{
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 
 .projects-title{
@@ -416,12 +389,6 @@
     text-align: center;
     margin-top: 40px;
     margin-bottom: 10px;
-}
-
-.interests{
-    align-items: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
 }
 
 .books-img{
