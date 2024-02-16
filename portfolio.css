@@ -345,7 +345,7 @@
     margin-top: 50px;
     display: inline-block;
     vertical-align: top;
-    margin-left: 70px;
+    margin-left: 100px;
 }
 
 .edu-logo{
@@ -362,7 +362,7 @@
 
 .edu-box{
     width: 320px;
-    height: 100px;
+    height: 140px;
     border-radius: 16px;
     border: 1px solid rgba(123, 74, 226, 0.50);
     display: inline-block;
