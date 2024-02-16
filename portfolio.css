@@ -335,6 +335,11 @@
     width: 120px;
     margin-right: 50px;
     margin-top: 10px;
+    transition: width 0.3s ease;
+}
+
+.edu-logo:hover {
+    width: 150px; 
 }
 
 .edu-box{
@@ -415,6 +420,14 @@
     margin-bottom: 50px;
 }
 
+.vscode{
+    display: inline-block;
+}
+
+.vscode svg{
+    padding-bottom: 8px;
+}
+
 .projects-title{
     vertical-align: top;
     width: 150px;
@@ -454,17 +467,44 @@
     margin-right: 10px;
 }
 
+.interests-name{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin-left: 680px;
+    margin-top: 40px;
+    text-decoration: none;
+    bottom: 100px;
+    transition: color 0.3s ease;
+}
+
 .projects-name{
     color: #FFF;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    text-align: center;
+    margin-left: 680px;
     margin-top: 40px;
-    margin-bottom: 10px;
+    bottom: 100px;
+}
+
+.interests-name:hover {
+    color: #7B4AE2;
+}
+
+.interests-container{
+    margin-left: 490px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .books-img{
-    width: 450px;
-    margin-left: 480px;
+    width: 100px;
+    margin-right: 10px;
+    transition: width 0.3s ease-in-out;
+}
+
+.books-img:hover {
+    width: 120px;
 }
