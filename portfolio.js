@@ -19,3 +19,14 @@ document.querySelector('.button2').addEventListener('click', function () {
     document.querySelector('.button2').classList.add('active');
     document.querySelector('.button1').classList.remove('active');
 });
+
+function myFunction() {
+    var r = confirm("Are you sure you want to proceed?");
+    if (r == true) {
+        // Code to run if OK is clicked
+        alert("You clicked OK!");
+    } else {
+        // Code to run if Cancel is clicked
+        alert("You clicked Cancel!");
+    }
+}

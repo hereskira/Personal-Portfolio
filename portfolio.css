@@ -1,5 +1,18 @@
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
 .container{
     background: #18253A;
+    animation: transitionIn 0.75s;
 }
 
 .navigation{
@@ -169,6 +182,11 @@
     vertical-align: top;
     width: 200px;
     font-weight: 550;
+    text-decoration: none;
+}
+
+.email p{
+    padding-top: 8px;
 }
 
 .hello, .name {
@@ -233,7 +251,7 @@
 }
 
 .perso-name2{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Pinyon Script', cursive;
     color: #FFF;
     font-size: 48px;
     font-weight: 800;
@@ -501,10 +519,42 @@
 
 .books-img{
     width: 100px;
-    margin-right: 10px;
-    transition: width 0.3s ease-in-out;
 }
 
-.books-img:hover {
-    width: 120px;
+* {box-sizing: border-box}
+
+.img-title{
+    position: relative;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.img-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #7B4AE2;
+}
+
+.img-title:hover .img-overlay {
+    opacity: 1;
+}
+
+.img-text{
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
