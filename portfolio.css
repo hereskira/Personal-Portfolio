@@ -434,16 +434,18 @@
     list-style: none;
     display: inline-block;
     vertical-align: top;
-    margin-left: 500px;
+    margin-left: 280px;
     margin-bottom: 50px;
 }
 
-.vscode{
-    display: inline-block;
+.skills-img{
+    width: 120px;
+    transition: width 0.3s ease;
+    margin-right: 20px;
 }
 
-.vscode svg{
-    padding-bottom: 8px;
+.skills-img:hover {
+    width: 150px; 
 }
 
 .projects-title{
