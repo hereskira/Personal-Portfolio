@@ -502,7 +502,17 @@
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    margin-left: 680px;
+    text-align: center;
+    margin-top: 40px;
+    bottom: 100px;
+}
+
+.projects-name2{
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
     margin-top: 40px;
     bottom: 100px;
 }
