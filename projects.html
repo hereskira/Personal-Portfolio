@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Skills </title>
+        <title> Projects </title>
         <link rel="stylesheet" href="portfolio.css">
     </head>
 
@@ -27,6 +27,9 @@
                 </li>
                 <li>
                     <a href="interests.html" class="nav"> Interests </a>
+                    <ul class="dropdown-content">
+                        <li><a href="interests.html#gallery"> Gallery </a></li>
+                    </ul>
                 </li>
             </ul>
         </nav>
@@ -70,5 +73,28 @@
                         </ul>
                     </div>
                 </div>
+
+                <p class="projects-name2"> AttendTrack: Class Attendance Management System </p>
+                <div class="row">
+                    <div class="column">
+                        <img src="Interface-CP/Home.png" alt="Home Page" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="Interface-CP/View Records.png" alt="View Records" onclick="myFunction(this);">
+                    </div>
+                    <div class="column">
+                        <img src="Interface-CP/Saved Records.png" alt="Saved Records" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+                <div class="proj-container2">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+                    <img id="expandedImg" class="expanded-img">
+
+                    <div id="imgtext"></div>
+                </div>
+
+                <script src="portfolio.js"></script>
     </body>
 </html>
