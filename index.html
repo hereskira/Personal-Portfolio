@@ -7,42 +7,51 @@
     <link href="styles.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="imageAssets/logo.png">
 </head>
-<body>
-    <nav>
-        <ul class="navigation">
-            <img src="imageAssets/logo.png" class="logo">
-            <li>
-                <a href="#home" class="nav">Home</a>
-            </li>
-            <li>
-                <a href="about-me.html" class="nav">About Me</a>
-                <ul class="dropdown-menu">
-                    <li><a href="about-me.html">Overview</a></li>
-                    <li><a href="about-me.html#edu">Education</a></li>
+<body class="container mx-auto">
+      <nav class="navi">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+            <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="imageAssets/logo.png" class="h-10 ml-10" alt="Logo" />
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700">
+                    <li>
+                        <a href="index.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:text-[rgba(255,255,255,0.50)] md:p-0 md:hover:text-blue-700 sm:text-gray-900 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="about-me.html" class="block py-2 px-3 md:text-[rgba(255,255,255,0.50)] sm:text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About Me</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="block py-2 px-3 md:text-[rgba(255,255,255,0.50)] sm:text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Skills</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="block py-2 px-3 md:text-[rgba(255,255,255,0.50)] sm:text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Projects</a>
+                    </li>
+                    <li>
+                        <a href="interests.html" class="block py-2 px-3 md:text-[rgba(255,255,255,0.50)] sm:text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:mr-10">Interests</a>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="skills.html" class="nav">Skills</a>
-            </li>
-            <li>
-                <a href="projects.html" class="nav">Projects</a>
-            </li>
-            <li>
-                <a href="interests.html" class="nav">Interests</a>
-                <ul class="dropdown-menu">
-                    <li><a href="interests.html#gallery">Gallery</a></li>
-                </ul>
-            </li>
-        </ul>
+            </div>
+        </div>
     </nav>
+    
+  
 
     <div class="content">
         <div class="inline-block align-top">
-            <p class="hello"> 👋 Hello! I'm </p>
+            <div class="flex flex-col items-center justify-center">
+                <p class="hello"> 👋 Hello! I'm </p>
+            </div>
             <p class="name"> Shakira <br> Regalado</p>
             <p class="dev"> Backend Developer </p>
             <div class="icons">
-                <a href="http://linkedin.com/in/shakira-regalado/"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <a href="http://linkedin.com/in/shakira-regalado/" class="mr-2"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                     <g clip-path="url(#clip0_30_57)">
                       <path d="M15.9999 0C24.837 0 32 7.164 32 16.0001C32 24.8361 24.837 32 15.9999 32C7.1629 32 0 24.836 0 16.0001C0 7.16411 7.16301 0 15.9999 0Z" fill="white" fill-opacity="0.5"/>
                       <path d="M9.01598 21.984H12.012V11.998H9.01598V21.984ZM20.688 11.6521C19.234 11.6521 17.933 12.183 17.0101 13.3551V11.9651H14.0031V21.9841H17.0101V16.5661C17.0101 15.4211 18.0591 14.304 19.3731 14.304C20.687 14.304 21.0111 15.4211 21.0111 16.5381V21.9831H24.0071V16.3151C24.007 12.378 22.143 11.6521 20.688 11.6521ZM10.5 11C11.328 11 12 10.328 12 9.49997C12 8.67195 11.328 8.00003 10.5 8.00003C9.67198 8.00003 8.99995 8.67206 8.99995 9.50008C8.99995 10.3281 9.67198 11 10.5 11Z" fill="#090E16"/>
@@ -71,5 +80,15 @@
             <a href="about-me.html" class="email"> <p> 📨 Email Me </p></a>
         </div> 
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.querySelector("[data-collapse-toggle]");
+            const menu = document.getElementById("navbar-default");
+
+            button.addEventListener("click", function () {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
 </body>
 </html>
