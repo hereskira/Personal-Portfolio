@@ -637,6 +637,10 @@ video {
   margin-left: 2.5rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
 .ms-2{
   margin-inline-start: 0.5rem;
 }
@@ -695,6 +699,10 @@ video {
 
 .h-5{
   height: 1.25rem;
+}
+
+.h-8{
+  height: 2rem;
 }
 
 .h-screen{
@@ -786,8 +794,16 @@ video {
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
+.self-center{
+  align-self: center;
+}
+
 .overflow-x-auto{
   overflow-x: auto;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .rounded{
@@ -872,6 +888,11 @@ video {
   vertical-align: top;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -894,6 +915,15 @@ video {
   font-weight: 400;
 }
 
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-blue-700{
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
 .text-gray-500{
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -902,11 +932,6 @@ video {
 .text-gray-700{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
-}
-
-.text-gray-900{
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -991,6 +1016,16 @@ body{
   margin-top: 2rem;
   height: 4rem;
   border-radius: 1rem;
+}
+
+@media (min-width: 768px){
+  .navi{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.navi{
   background: rgba(123, 74, 226, 0.1);
 }
 
@@ -1061,22 +1096,31 @@ body{
   color: rgb(123 74 226 / var(--tw-text-opacity));
 }
 
-.content{
-  margin-left: 150px;
-  margin-top: 100px;
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Ensures items wrap to the next line if needed */
+  justify-content: center;
+  /* Centers items horizontally */
   align-items: center;
+  /* Centers items vertically */
+  text-align: center;
+  /* Centers text content */
+  margin-left: 0;
+  /* Adjust margin as needed */
+  margin-top: 100px;
+  /* Adjust margin as needed */
 }
 
-.text{
-  display: inline-block;
-  vertical-align: top;
-}
-
-.image{
-  position: relative;
-  z-index: 1;
-  margin-left: 50px;
-  display: inline-block;
+.image {
+  max-width: 100%;
+  height: auto;
+  /* Ensures image aspect ratio is maintained */
+  margin-left: 0;
+  /* Adjust margin as needed */
+  margin-left: 5rem;
+  margin-right: 5rem;
   width: 350px;
 }
 
@@ -1104,6 +1148,15 @@ body{
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hello,
+.name,
+.dev {
+  text-align: center;
+  /* Centers text content */
+  margin: 5px;
+  /* Adjust margin as needed */
+}
+
 .dev{
   margin-left: 1.5rem;
   font-size: 1.25rem;
@@ -1112,82 +1165,54 @@ body{
   color: rgba(255,255,255,0.50);
 }
 
-.icons svg{
-  margin-left: 0.625rem;
-}
-
-.icons{
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 640px){
-  .icons{
-    max-width: 640px;
-  }
+.icons {
+  display: flex;
+  /* Ensures icons are displayed in a row */
+  justify-content: center;
+  /* Centers icons horizontally */
+  margin-top: 20px;
+  margin: 2.5rem;
 }
 
 @media (min-width: 768px){
   .icons{
-    max-width: 768px;
+    margin: 0px;
+    margin-top: 1.25rem;
+  }
+}
+
+.comm{
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px){
+  .comm{
+    margin-top: 4rem;
   }
 }
 
 @media (min-width: 1024px){
-  .icons{
-    max-width: 1024px;
+  .comm{
+    margin: 0px;
   }
-}
-
-@media (min-width: 1280px){
-  .icons{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .icons{
-    max-width: 1536px;
-  }
-}
-
-.icons{
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: 68px;
-  margin-top: 30px;
-  display: flex;
-}
-
-.comm{
-  margin-left: 100px;
-  margin-top: 120px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
 }
 
 .comm svg{
   display: inline-block;
 }
 
-.comm p{
-  margin: 0px;
-  margin-bottom: 0.625rem;
-  display: inline-block;
-  align-items: center;
-  font-size: 1rem;
-  line-height: 1.5rem;
+.comm p {
+  margin: 0 10px;
   --tw-text-opacity: 1;
   color: rgb(123 74 226 / var(--tw-text-opacity));
 }
 
-.comm a{
-  text-decoration-line: none;
-}
-
 .email{
+  margin-top: 0.5rem;
   display: flex;
   height: 2.25rem;
   width: 200px;
@@ -1211,15 +1236,6 @@ body{
 
 .email {
   background: rgba(123, 74, 226, 0.1);
-}
-
-.email p{
-  padding-top: 0.5rem;
-}
-
-.hello,
-.name{
-  margin: 1.25rem;
 }
 
 .about-me{
@@ -1718,7 +1734,18 @@ body{
   --tw-ring-color: rgb(229 231 235 / var(--tw-ring-opacity));
 }
 
+@media (min-width: 640px){
+  .sm\:text-gray-900{
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+  }
+}
+
 @media (min-width: 768px){
+  .md\:mr-10{
+    margin-right: 2.5rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -1749,13 +1776,16 @@ body{
     border-width: 0px;
   }
 
-  .md\:bg-white{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  .md\:bg-transparent{
+    background-color: transparent;
   }
 
   .md\:p-0{
     padding: 0px;
+  }
+
+  .md\:text-\[rgba\(255\2c 255\2c 255\2c 0\.50\)\]{
+    color: rgba(255,255,255,0.50);
   }
 
   .md\:text-blue-700{
@@ -1788,11 +1818,6 @@ body{
     border-color: rgb(55 65 81 / var(--tw-border-opacity));
   }
 
-  .dark\:bg-blue-600{
-    --tw-bg-opacity: 1;
-    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-  }
-
   .dark\:bg-gray-700{
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -1801,6 +1826,11 @@ body{
   .dark\:bg-gray-800{
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  }
+
+  .dark\:text-blue-500{
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246 / var(--tw-text-opacity));
   }
 
   .dark\:text-gray-400{
@@ -1823,6 +1853,11 @@ body{
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 
+  .dark\:hover\:text-blue-400:hover{
+    --tw-text-opacity: 1;
+    color: rgb(96 165 250 / var(--tw-text-opacity));
+  }
+
   .dark\:hover\:text-white:hover{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1841,11 +1876,6 @@ body{
 
 @media (min-width: 768px){
   @media (prefers-color-scheme: dark){
-    .md\:dark\:bg-gray-900{
-      --tw-bg-opacity: 1;
-      background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-    }
-
     .md\:dark\:bg-transparent{
       background-color: transparent;
     }
